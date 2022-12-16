@@ -1,51 +1,35 @@
 <template>
   <div>
- <Header/>
-  <NavBar/>
- 
-  <router-view/>
- 
-</div>
+    <Header />
 
- 
-
-
- 
-  
+    <router-view />
+  </div>
 </template>
 
 <script>
-
-
-
-import NavBar from "./components/NavBar.vue"
-import Header from "./components/Header.vue"
+import Header from "./components/Header.vue";
+// import Hero from "@/components/Hero.vue";
 
 export default {
-components: {Header, NavBar}
-
-}
-
-
+  components: { Header },
+};
 </script>
 <style>
-#app{
+#app {
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
- background: black;
-  
+  background: rgb(0, 0, 0);
 }
 
-body{
-  width: 100vw;
-  
-  height: 100vh;
-
-background-image: linear-gradient(to right, rgb(255, 255, 255) 0% 5%, rgb(49, 49, 49) 5% 95%, rgb(255, 255, 255) 95% 100%);
-
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(14, 13, 13) 0% 5%,
+    rgb(14, 13, 13) 5% 95%,
+    rgb(14, 13, 13) 95% 100%
+  );
 }
-
 </style>

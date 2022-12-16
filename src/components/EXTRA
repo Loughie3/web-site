@@ -1,0 +1,601 @@
+ <b-col md="6" >
+      <b-card md="6" class="card" >
+          <h3 > Who are we?</h3>
+          South Bank Electrical has been established for over 15 years, 
+          we are a team of highly expierienced electrictions.<p>We pride ourselves on getting the job done in a time and cost effective manner.</p> 
+          <h3>Quality Assurance</h3> 
+          You can rest asure that that the job will be completed with the utmost care and quality 
+       </b-card>
+       <b-card class="card" >
+      <h3>We specialise in:</h3>
+     <h2><p><router-link class="nav-a" to="/services">DATA<b-icon-check-lg/></router-link></p>
+     <p><router-link class="nav-a" to="/services">RESIDENTIAL<b-icon-check-lg/></router-link></p> 
+     <p><router-link class="nav-a" to="/services">COMMERCIAL<b-icon-check-lg/></router-link></p>  
+     <p><router-link class="nav-a" to="/services">MAINTENANCE<b-icon-check-lg/></router-link></p> 
+     <p><router-link class="nav-a" to="/services">AIR CONDITIONING<b-icon-check-lg/></router-link></p> 
+     <p><router-link class="nav-a" to="/services">SMOKE DETECTION<b-icon-check-lg/></router-link></p> 
+    </h2>
+      </b-card>
+      </b-col>
+    <b-col > 
+      
+  <div>
+    <b-col md="12">
+      <b-card class="card2">
+      <h3>Attention to Detail</h3>
+      This Keeping a close and thoughtful eye on all aspects of an electrical and data installation has ensured that these demands are met every time. We can offer complete electrical and data installations 
+        
+      </b-card>
+
+     
+      
+
+    </b-col>
+    <b-form @submit="onSubmit" class ="form" md="6">
+      <h3 style="color: rgb(235, 100, 33); text-decoration: none;">Enquiry Form:</h3>
+      <b-form-group id="input-group-1" label="Your Name:" label-for="input-1" class="label">
+      <b-form-input class="input"
+          id="input-1"
+          v-model="form.name"
+          placeholder="Enter name"
+          required
+        ></b-form-input>
+
+        <b-form-group id="input-group-2" label="Email address:" label-for="input-2" class="label">
+        </b-form-group>
+        <b-form-input class="input"
+          id="input-2"
+          v-model="form.email"
+          type="email"
+          placeholder="Enter email"
+          required
+        ></b-form-input>
+      </b-form-group>
+
+      <b-form-group id="input-group-3" label="Phone Number:" label-for="input-3" class="label">
+        </b-form-group>
+        <b-form-input class="input"
+          id="input-3"
+          v-model="form.number"
+          placeholder="Enter Phone Number"
+          type="phone"
+          required
+        ></b-form-input>
+
+        <b-form-group id="input-group-4" label="Subject:" label-for="input-4" class="label">
+        </b-form-group>
+        <b-form-input class="input"
+          id="input-4"
+          v-model="form.subject"
+          placeholder="Enter The Subject"
+        ></b-form-input>
+
+        <b-form-group id="input-group-5" label="Message:" label-for="input-5" class="label">
+        </b-form-group>
+        <b-textarea class="text"
+          id="input-5"
+          v-model="form.message"
+          placeholder="Message"
+          type="text-box"
+          required
+        ></b-textarea>
+      
+
+      
+
+      
+      
+
+      <b-button style="background: rgb(235, 100, 33); margin-top:10px;" type="submit" value="send">Submit</b-button>
+    
+    </b-form>
+
+
+
+
+    <b-button size="lg" v-b-toggle.collapse-1 style=" background: black; border: black; width:100%;" class="m-1" >DATA <b-icon-caret-down/></b-button>
+    <b-collapse id="collapse-1">
+  
+  <b-card header = "We are certified data installers" md="5" class="card" bg-variant="dark" style="border-color: rgb(235, 100, 33); font-size: 35px;">
+    <b-card-body style="font-size: 25px;">
+    We are skilled in getting you set up or helping when you need changes made, as your business changes or expands.
+
+Office network cabling from Cat5E through to fibre optic
+Data racks
+Diagnosing data cabling and PSTN line faults
+Labelling, cable management and record keeping
+Alterations to your existing cabling infrastructure
+</b-card-body> 
+  
+</b-card>
+</b-collapse>
+  </b-card>
+</div>
+      
+      
+      </b-col>
+        <b-col class="details"  md="4">  
+          <b-row><b-img :src="require('../assets/Light2.jpeg')" ></b-img></b-row>
+<h1 style="color:white">We specialise in:<hr style=" border-top: 10px double orange;"></h1> 
+<h3>
+ 
+<P> <b-button size="lg" v-b-toggle.collapse-1 style=" background: black; border: black; width:100%;" class="m-1" >DATA <b-icon-caret-down/></b-button>
+</P>
+<p><b-button size="lg" v-b-toggle.collapse-2 style=" background: black; border: black; width:100%" class="m-1">RESIDENTIAL <b-icon-caret-down/></b-button>
+<b-collapse id="collapse-2">
+  <b-card header=" For all your residential needs" md="5" class="card" bg-variant="dark" style="border-color: rgb(235, 100, 33); font-size: 35px;">
+    <b-card-body style="font-size: 25px;">
+      We are skilled in getting you set up or helping when you need changes made, as your business changes or expands.
+
+Office network cabling from Cat5E through to fibre optic
+Data racks
+Diagnosing data cabling and PSTN line faults
+Labelling, cable management and record keeping
+Alterations to your existing cabling infrastructure
+  </b-card-body>
+  </b-card>
+</b-collapse></p>   
+<p><b-button size="lg" v-b-toggle.collapse-3 style=" background: black; border: black; width:100%" class="m-1">COMMERCIAL <b-icon-caret-down/></b-button>
+<b-collapse id="collapse-3">
+  <b-card header="Commercial" md="5" class="card" bg-variant="dark" style="border-color: rgb(235, 100, 33);  font-size: 35px;">
+    <b-card-body style="font-size: 25px;">
+       No business is too large for us or some shit
+       </b-card-body>
+  </b-card>
+</b-collapse></p>  
+<p><b-button size="lg" v-b-toggle.collapse-4 style=" background: black; border: black; width:100%" class="m-1">MAINTENANCE <b-icon-caret-down/></b-button>
+<b-collapse id="collapse-4">
+  <b-card header ="Maintenance" md="5" class="card" bg-variant="dark" style="border-color: rgb(235, 100, 33);  font-size: 35px;">
+    <b-card-body style="font-size: 25px;">
+       No business is too large for us or some shit
+       </b-card-body>
+  </b-card>
+</b-collapse></p> 
+<p><b-button size="lg" v-b-toggle.collapse-5 style=" background: black; border: black; width:100%" class="m-1"> AIR CONDITIONING <b-icon-caret-down/></b-button>
+<b-collapse id="collapse-5">
+  <b-card header="Air Conditioning" md="5" class="card" bg-variant="dark" style="border-color: rgb(235, 100, 33);  font-size: 35px;">
+    <b-card-body style="font-size: 25px;">
+      <li>Installation</li> <li>Repair</li><li>Service</li>
+       </b-card-body> 
+  
+  </b-card>
+</b-collapse></p> 
+<p><b-button size="lg" v-b-toggle.collapse-6 style=" background: black; border: black; width:100%" class="m-1">SMOKE DETECTION <b-icon-caret-down/></b-button>
+<b-collapse id="collapse-6">
+  <b-card header = "Smoke detection" md="5" class="card" bg-variant="dark" style="border-color: rgb(235, 100, 33);  font-size: 35px;">
+    <b-card-body style="font-size: 25px;">
+      Smoke alarms are vital for any house/business. South Bank Electrical offers tests and installation
+       </b-card-body> 
+  
+  
+  </b-card>
+</b-collapse></p> 
+
+</h3>  
+
+
+
+
+
+
+
+
+<b-row><h4>We specialise in:</h4></b-row>
+      <b-row>
+        <b-col>hey </b-col>
+
+        <b-col md="2" class="text-center">
+          <div>
+            <b-card
+              img-src="https://cdn.pixabay.com/photo/2020/05/18/00/32/cable-5183996_960_720.jpg"
+              img-alt="Image"
+              img-top
+              class="mb-2"
+            >
+              <b-nav-item class="nav"
+                ><router-link class="nav-a" to="/Services"
+                  >Data</router-link
+                ></b-nav-item
+              >
+            </b-card>
+          </div></b-col
+        >
+
+        <b-col md="2">
+          <div>
+            <b-card
+              :img-src="require('../assets/Camera.jpeg')"
+              img-alt="Image"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <b-nav-item class="nav"
+                ><router-link class="nav-a" to="/Services"
+                  >Home Security and CCTV Systems</router-link
+                ></b-nav-item
+              >
+            </b-card>
+          </div></b-col
+        >
+
+        <b-col md="2">
+          <div>
+            <b-card
+              :img-src="require('../assets/Pic.jpeg')"
+              img-alt="Image"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <b-nav-item class="nav"
+                ><router-link class="nav-a" to="/Services"
+                  >Commerical/Residential</router-link
+                ></b-nav-item
+              >
+            </b-card>
+          </div></b-col
+        >
+
+        <b-col></b-col>
+      </b-row>
+
+      <b-row>
+        <b-col></b-col>
+
+        <b-col md="2">
+          <div></div>
+
+          <div>
+            <b-card
+              :img-src="require('../assets/Electric V.jpeg')"
+              img-alt="Image"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <b-nav-item class="nav"
+                ><router-link class="nav-a" to="/Services"
+                  >Electrical Vehicle Charging Outlets</router-link
+                ></b-nav-item
+              ></b-card
+            >
+          </div></b-col
+        >
+
+        <b-col md="2">
+          <div>
+            <b-card
+              :img-src="require('../assets/Aircon.jpeg')"
+              img-alt="Image"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <b-nav-item class="nav"
+                ><router-link class="nav-a" to="/Services"
+                  >Air Conditioning</router-link
+                ></b-nav-item
+              ></b-card
+            >
+          </div></b-col
+        >
+
+        <b-col md="2">
+          <div>
+            <b-card
+              :img-src="require('../assets/Smoke.jpeg')"
+              img-alt="Image"
+              img-top
+              tag="article"
+              class="mb-2"
+            >
+              <b-nav-item class="nav"
+                ><router-link class="nav-a" to="/Services"
+                  >Smoke Detection</router-link
+                ></b-nav-item
+              ></b-card
+            >
+          </div></b-col
+        >
+
+        <b-col></b-col>
+      </b-row>
+
+
+SERVICES PAGE
+
+
+<b-container fluid class="text-light, text-center">
+    <b-row>
+      <b-col cols="3"></b-col>
+      <b-col cols="6"> </b-col>
+      <b-col cols="3"></b-col>
+    </b-row>
+    <h1 style="color: white">
+      We specialise in:
+      <hr style="border-top: 10px double orange" />
+    </h1>
+
+    <b-row>
+      <b-col> </b-col>
+
+      <b-col md="3">
+        <div>
+          <b-card
+            img-src="https://cdn.pixabay.com/photo/2020/05/18/00/32/cable-5183996_960_720.jpg"
+            img-alt="Image"
+            img-top
+            tag="article"
+            class="mb-2"
+          >
+            <b-button size="lg" v-b-toggle.collapse-1 class="m-1"
+              >Data <b-icon-caret-down
+            /></b-button>
+            <b-collapse id="collapse-1">
+              <b-card
+                header="We are certified data installers"
+                md="5"
+                class="card"
+                bg-variant="dark"
+                style="border-color: rgb(235, 100, 33); font-size: 35px"
+              >
+                <b-card-body style="font-size: 25px">
+                  We are skilled in getting you set up or helping when you need
+                  changes made, as your business changes or expands. Office
+                  network cabling from Cat5E through to fibre optic Data racks
+                  Diagnosing data cabling and PSTN line faults Labelling, cable
+                  management and record keeping Alterations to your existing
+                  cabling infrastructure
+                </b-card-body>
+              </b-card>
+            </b-collapse>
+          </b-card>
+        </div></b-col
+      >
+
+      <b-col md="3">
+        <div>
+          <b-card
+            :img-src="require('../assets/Camera.jpeg')"
+            img-alt="Image"
+            img-top
+            tag="article"
+            class="mb-2"
+          >
+            <b-button size="lg" v-b-toggle.collapse-2 class="m-1"
+              >Home Security And CCTV Systems <b-icon-caret-down
+            /></b-button>
+            <b-collapse id="collapse-2">
+              <b-card
+                header=" For all your residential needs"
+                md="5"
+                class="card"
+                bg-variant="dark"
+                style="border-color: rgb(235, 100, 33); font-size: 35px"
+              >
+                <b-card-body style="font-size: 25px">
+                  We are skilled in getting you set up or helping when you need
+                  changes made, as your business changes or expands. Office
+                  network cabling from Cat5E through to fibre optic Data racks
+                  Diagnosing data cabling and PSTN line faults Labelling, cable
+                  management and record keeping Alterations to your existing
+                  cabling infrastructure
+                </b-card-body>
+              </b-card>
+            </b-collapse>
+          </b-card>
+        </div></b-col
+      >
+
+      <b-col md="3">
+        <div>
+          <b-card
+            :img-src="require('../assets/Pic.jpeg')"
+            img-alt="Image"
+            img-top
+            tag="article"
+            class="mb-2"
+          >
+            <b-button size="lg" v-b-toggle.collapse-3 class="m-1"
+              >Commerical/Residential <b-icon-caret-down
+            /></b-button>
+            <b-collapse id="collapse-3">
+              <b-card
+                header="Commercial"
+                md="5"
+                class="card"
+                bg-variant="dark"
+                style="border-color: rgb(235, 100, 33); font-size: 35px"
+              >
+                <b-card-body style="font-size: 25px">
+                  No business is too large for us or some shit
+                </b-card-body>
+              </b-card>
+            </b-collapse>
+          </b-card>
+        </div></b-col
+      >
+
+      <b-col></b-col>
+    </b-row>
+
+    <b-row>
+      <b-col>1 </b-col>
+      <b-col md="3">2</b-col>
+      <b-col md="3"
+        ><b-nav-item class="nav"
+          ><router-link class="nav-a" to="/Contact"
+            >Request a Quote Today!</router-link
+          ></b-nav-item
+        >
+      </b-col>
+      <b-col md="2">4</b-col>
+      <b-col>5</b-col>
+    </b-row>
+
+    <b-row>
+      <b-col></b-col>
+
+      <b-col md="3">
+        <div>
+          <b-card
+            :img-src="require('../assets/Electric V.jpeg')"
+            img-alt="Image"
+            img-top
+            tag="article"
+            class="mb-2"
+          >
+            <b-button size="lg" v-b-toggle.collapse-4 class="m-1"
+              >Electrical Vehicle Charging Outlets <b-icon-caret-down
+            /></b-button>
+            <b-collapse id="collapse-4">
+              <b-card
+                header="Maintenance"
+                md="5"
+                class="card"
+                bg-variant="dark"
+                style="border-color: rgb(235, 100, 33); font-size: 35px"
+              >
+                <b-card-body style="font-size: 25px">
+                  No business is too large for us or some shit
+                </b-card-body>
+              </b-card>
+            </b-collapse>
+          </b-card>
+        </div></b-col
+      >
+
+      <b-col md="3">
+        <div>
+          <b-card
+            :img-src="require('../assets/Aircon.jpeg')"
+            img-alt="Image"
+            img-top
+            tag="article"
+            class="mb-2"
+          >
+            <b-button size="lg" v-b-toggle.collapse-5 class="m-1">
+              Air Conditioning <b-icon-caret-down
+            /></b-button>
+            <b-collapse id="collapse-5">
+              <b-card
+                header="Air Conditioning"
+                md="5"
+                class="card"
+                bg-variant="dark"
+                style="border-color: rgb(235, 100, 33); font-size: 35px"
+              >
+                <b-card-body style="font-size: 25px">
+                  <li>Installation</li>
+                  <li>Repair</li>
+                  <li>Service</li>
+                </b-card-body>
+              </b-card>
+            </b-collapse>
+          </b-card>
+        </div></b-col
+      >
+
+      <b-col md="3">
+        <div>
+          <b-card
+            :img-src="require('../assets/Smoke.jpeg')"
+            img-alt="Image"
+            img-top
+            tag="article"
+            class="mb-2"
+          >
+            <b-button size="lg" v-b-toggle.collapse-6 class="m-1"
+              >Smoke Detection <b-icon-caret-down
+            /></b-button>
+            <b-collapse id="collapse-6">
+              <b-card
+                header="Smoke detection"
+                md="5"
+                class="card"
+                bg-variant="dark"
+                style="border-color: rgb(235, 100, 33); font-size: 35px"
+              >
+                <b-card-body style="font-size: 25px">
+                  Smoke alarms are vital for any house/business. South Bank
+                  Electrical offers tests and installation
+                </b-card-body>
+              </b-card>
+            </b-collapse>
+          </b-card>
+        </div></b-col
+      >
+
+      <b-col></b-col>
+    </b-row>
+  </b-container>
+</template>
+
+<script>
+export default {
+  name: "Services",
+};
+</script>
+
+<style scoped>
+p,
+h3,
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+.card {
+  width: 100%;
+  color: white;
+}
+.m-1 {
+  background-color: rgb(0, 0, 0);
+  border: black;
+  width: 100%;
+}
+.m-1:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+
+  border-radius: 15px;
+  border: 2px solid;
+  border-color: rgb(255, 255, 255);
+}
+
+.mb-2 {
+  background-color: rgb(14, 13, 13);
+  max-width: 40rem;
+  margin-top: 70px;
+}
+.mb-2:hover {
+  background: rgb(235, 100, 33);
+  transition: 0.5s;
+  border-radius: 15px;
+  border: 3px solid;
+  border-color: white;
+  border-style: round;
+}
+.nav-a {
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  padding-top: 20px;
+
+  padding-right: 70px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+
+  border-radius: 10px;
+  border: 5px solid rgb(0, 0, 0);
+  text-decoration: none;
+  background: rgb(235, 100, 33);
+}
+.nav {
+  padding-bottom: 5px;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+</style>
+
+      

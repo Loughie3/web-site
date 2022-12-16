@@ -1,30 +1,68 @@
 <template>
+  <b-container fluid class="text-light,">
+    <div>
+      <b-jumbotron class="jumbotron, text-center" header=" Projects">
+      </b-jumbotron>
+    </div>
+    <b-row> </b-row>
+    <b-row style="color: white">
+      <b-col md="2"></b-col>
 
-    <b-container>
-        <b-row align-v="center" >
-    <b-col >TEST</b-col>
-   
-    <b-col> 
-      <h1 style="color:white">Our Projects</h1>
-    </b-col>
+      <b-col md="1"> </b-col>
+      <b-col md="5">
+        <b-img style="margin-bottom: 100px" fluid></b-img>
+      </b-col>
+      <b-row></b-row>
 
-        <b-col>JOB ONE</b-col>
+      <b-col md="3"> </b-col>
+      <b-col md="2"> </b-col>
+      <b-col md="5">
+        <h2>Here are some of the projects we have worked on</h2>
+        <p class="description">
+          South Bank Electrical has been established for over 15 years, we are a
+          team of highly expierienced electrictions.We pride ourselves on
+          getting the job done in a time and cost effective manner.
+        </p>
+        <h2>
+          <b-icon icon="tools" class="icon" font-scale="2.5"></b-icon> Expert
+          Electricians
+        </h2>
+
+        <b-row>
+          <h2>
+            <b-icon icon="clock-fill" class="icon" font-scale="2.5"></b-icon>
+            Fast Quotes
+          </h2>
+        </b-row>
+      </b-col>
+      <b-row></b-row>
+      <hr />
     </b-row>
-</b-container>
-
+  </b-container>
 </template>
 
 <script>
 export default {
-
-}
+  components: {},
+};
 </script>
 
-<style>
-body{
-  width: 100vw;
-  
-  height: 100vh;
+<style scoped>
+.jumbotron::after {
+  content: "";
+  position: absolute;
+  filter: blur(8px);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url("../assets/Test2.jpeg");
+}
 
-background-image: linear-gradient(to right, rgb(255, 255, 255) 0% 5%, rgb(49, 49, 49) 5% 95%, rgb(255, 255, 255) 95% 100%);}
+@media (max-width: 900px) {
+  .jumbotron {
+    max-height: 350px;
+  }
+}
 </style>
