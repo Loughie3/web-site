@@ -473,8 +473,6 @@ export default {
 };
 </script>
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital@0;1&display=swap");
-
 .heading {
   font-family: "Quattrocento Sans", sans-serif;
   font-size: calc(100% + 0.5vw);
