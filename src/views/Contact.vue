@@ -10,15 +10,20 @@
       <b-col md="8">
         <h1 style="color: white" class="contactUs"></h1>
 
+<<<<<<< HEAD
         <b-form
           @submit.prevent="onSubmit"
           class="form"
           style="border: 5px solid"
         >
+=======
+        <b-form @submit.prevent="sendContactMessage()" class="form">
+>>>>>>> 967f4fe17a3e6210b3817eafb5c5706d8a125632
           <b-row>
             <b-col>
               <h2>Make an Enquiry:</h2>
 
+<<<<<<< HEAD
               <b-form-group
                 id="input-group-1"
                 label="Your Name:"
@@ -95,6 +100,36 @@
               ></b-textarea>
 
               <input class="button" type="submit" value="Submit" />
+=======
+              <div v-if="contact_notice != ''" class="alert alert-warning">
+                There was a problem submitting your message.
+                {{ contact_notice }}
+              </div>
+
+              <div v-else>
+                <h3>Message submitted Successfully</h3>
+              </div>
+
+              <form @submit.prevent="sendContactMessage()">
+                <div class="form-group text-left">
+                  <input
+                    v-model="contact_email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Your Email"
+                  />
+                  <textarea
+                    v-model="contact_message"
+                    class="form-control mt-3"
+                    placeholder="Enter Your Message"
+                    rows="5"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+>>>>>>> 967f4fe17a3e6210b3817eafb5c5706d8a125632
             </b-col>
 
             <b-col md="6" class="divider">
@@ -127,21 +162,36 @@
 
 <script>
 export default {
-  methods: {
-    onSubmit() {
-      console.log("Submitted");
-    },
-  },
   data() {
     return {
-      form: {
-        email: "",
-        name: "",
-        number: "",
-        subject: "",
-        message: "",
-      },
+      email: "",
+      message: "",
+      contact_email: "",
+      contact_message: "",
+      contact_notice: "",
     };
+  },
+  methods: {
+    sendContactMessage() {
+      if (!this.validEmail(this.contact_email)) {
+        this.contact_notice = "The email address is badly formatted.";
+      } else if (this.contact_message.length < 10) {
+        this.contact_notice = "Your message is too short";
+      } else {
+        const url = `https://us-central1-southbankelectrical.cloudfunctions.net/sendEmail?email_from=${this.contact_email}&message=${this.contact_message}`;
+        const requestOptions = {
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+        };
+        fetch(url, requestOptions);
+        this.show_contact = false;
+      }
+    },
+    validEmail(email) {
+      var re =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    },
   },
 };
 </script>
