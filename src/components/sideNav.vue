@@ -10,7 +10,12 @@
         >CCTV and Home Security</router-link
       ></b-row
     >
-    <b-row><router-link class="sideNav" to="/Data">Data</router-link></b-row>
+    <b-row>
+      <router-link class="sideNav" to="/ElectricVehicle"
+        >Electric Vehicle charging</router-link
+      ></b-row
+    >
+
     <b-row
       ><router-link class="sideNav" to="/Aircon"
         >Air conditioning</router-link
@@ -22,15 +27,10 @@
     >
     <b-row>
       <router-link class="sideNav" to="/Commercial"
-        >Commercial/Residential</router-link
+        >General Electrical/ Data</router-link
       ></b-row
     >
-    <b-row>
-      <router-link class="sideNav" to="/ElectricVehicle"
-        >Electric Vehicle</router-link
-      ></b-row
-    ></b-col
-  >
+  </b-col>
 </template>
 
 <script>
@@ -41,7 +41,7 @@ export default {
 <style>
 .sideNav {
   color: rgb(255, 255, 255);
-  font-weight: bold;
+
   font-size: 20px;
   padding-top: 10px;
   padding-right: 10px;

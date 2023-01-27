@@ -7,7 +7,6 @@ import Contact from "../views/Contact.vue";
 import CCTV from "../views/Services/CCTV.vue";
 import Aircon from "../views/Services/Aircon.vue";
 import Commerical from "../views/Services/Commercial.vue";
-import Data from "../views/Services/Data.vue";
 import Smoke from "../views/Services/Smoke.vue";
 import ElectricVehicle from "../views/Services/ElectricVehicle.vue";
 
@@ -49,11 +48,7 @@ const routes = [
     name: "commerical",
     component: Commerical,
   },
-  {
-    path: "/data",
-    name: "data",
-    component: Data,
-  },
+
   {
     path: "/smoke",
     name: "smoke",

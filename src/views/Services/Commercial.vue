@@ -15,9 +15,9 @@
       <b-col md="1"> </b-col>
       <b-col md="5">
         <b-img
-          style="margin-bottom: 100px"
+          style="margin-bottom: 20px"
           fluid
-          :src="require('../Services/Images/Camera.jpeg')"
+          :src="require('../Services/Images/Test2 copy.jpeg')"
         ></b-img>
       </b-col>
       <b-row></b-row>
@@ -25,23 +25,19 @@
       <b-col md="3"> </b-col>
       <b-col md="2"> </b-col>
       <b-col md="5">
-        <h2>We Provide Professional CCTV and Home Security Installations</h2>
+        <h2 class="text-center">General Electrical/ Data</h2>
         <p class="description">
-          South Bank Electrical has been established for over 15 years, we are a
-          team of highly expierienced electrictions.We pride ourselves on
-          getting the job done in a time and cost effective manner.
+          If you're in need of top-notch electrical contracting services, look
+          no further! Our team of highly skilled and trained electricians are
+          equipped to handle all of your electrical needs, from simple repairs
+          to complex installations. We pride ourselves on our attention to
+          detail and commitment to safety, ensuring that every job is completed
+          to the highest standards.
         </p>
-        <h2>
-          <b-icon icon="tools" class="icon" font-scale="2.5"></b-icon> Expert
-          Electricians
-        </h2>
-
-        <b-row>
-          <h2>
-            <b-icon icon="clock-fill" class="icon" font-scale="2.5"></b-icon>
-            Fast Quotes
-          </h2>
-        </b-row>
+        <p>
+          With years of experience and a reputation for excellence, you can
+          trust us to get the job done. Contact us today for a free quote!
+        </p>
       </b-col>
       <b-row></b-row>
       <hr />

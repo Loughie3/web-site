@@ -13,9 +13,9 @@
       <b-col md="1"> </b-col>
       <b-col md="5">
         <b-img
-          style="margin-bottom: 100px"
+          style="margin-bottom: 20px"
           fluid
-          :src="require('../Services/Images/Camera.jpeg')"
+          :src="require('../Services/Images/Electric V.jpeg')"
         ></b-img>
       </b-col>
       <b-row></b-row>
@@ -23,23 +23,23 @@
       <b-col md="3"> </b-col>
       <b-col md="2"> </b-col>
       <b-col md="5">
-        <h2>We Provide Professional CCTV and Home Security Installations</h2>
+        <h2 class="text-center">Electric Vehicle Charging</h2>
         <p class="description">
-          South Bank Electrical has been established for over 15 years, we are a
-          team of highly expierienced electrictions.We pride ourselves on
-          getting the job done in a time and cost effective manner.
+          Installing electric vehicle charging outlets at your business or
+          residence is a smart and responsible choice for the environment. Not
+          only will it attract eco-conscious customers and tenants, but it will
+          also reduce your carbon footprint and save you money on fuel costs in
+          the long run. Our professional installation team will make sure the
+          process is seamless and hassle-free. With our wide range of charging
+          options and competitive pricing, there has never been a better time to
+          make the switch to electric. 
+          <p>Upgrade your property and join the
+          movement towards a cleaner, more sustainable future. Contact us today
+          to learn more and request a quote.
         </p>
-        <h2>
-          <b-icon icon="tools" class="icon" font-scale="2.5"></b-icon> Expert
-          Electricians
-        </h2>
-
-        <b-row>
-          <h2>
-            <b-icon icon="clock-fill" class="icon" font-scale="2.5"></b-icon>
-            Fast Quotes
-          </h2>
-        </b-row>
+        </p>
+      
+        
       </b-col>
       <b-row></b-row>
       <hr />

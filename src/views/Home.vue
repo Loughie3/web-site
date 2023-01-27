@@ -1,12 +1,12 @@
 <template>
   <b-container fluid class="text-center">
     <div>
-      <b-col md=""></b-col>
       <b-col md="12"
         ><b-jumbotron
           class="jumbotron"
           md="5"
           header="Welcome to South Bank Electrical"
+          style="color: whitesmoke"
         >
           <div class="heading">
             <h1>Home Security and Electrical Experts</h1>
@@ -14,21 +14,13 @@
           </div>
         </b-jumbotron>
       </b-col>
-      <b-col md=""></b-col>
     </div>
 
     <b-row class="image">
       <b-col md="3"> </b-col>
       <b-col md="6">
-        <b-carousel
-          id="carousel-no-animation"
-          :interval="3000"
-          fade
-          indicators
-          fluid
-        >
+        <b-carousel id="carousel-no-animation" :interval="3000" fade indicators>
           <b-carousel-slide
-            fluid
             v-for="(slide, index) in slides"
             :img-src="slide.image"
             :key="index"
@@ -54,7 +46,6 @@
             fluid
             width="600"
             :src="require('../assets/Elect.jpeg')"
-            caption="First Slide"
             class="aboutImage"
           >
           </b-img>
@@ -65,23 +56,47 @@
 
           <p class="description">
             South Bank Electrical has been established for over 15 years, we are
-            a team of highly expierienced electrictions.We pride ourselves on
+            a team of highly expierienced electrictions. We pride ourselves on
             getting the job done in a time and cost effective manner.
           </p>
           <h2>
-            <b-icon icon="tools" class="icon" font-scale="2"></b-icon> Expert
+            <b-icon icon="tools" class="icon" font-scale="1.75"></b-icon> Expert
             Electricians
           </h2>
 
           <b-row>
             <h2>
-              <b-icon icon="clock-fill" class="icon" font-scale="2"></b-icon>
+              <b-icon icon="clock-fill" class="icon" font-scale="1.75"></b-icon>
               Fast Quotes
             </h2>
           </b-row>
         </b-col>
       </b-row>
 
+      <b-col md="4">
+        <div class="cards">
+          <b-card no-body class="overflow-hidden">
+            <b-nav-item class="navCards"
+              ><router-link class="nav-aCards" to="/electricVehicle">
+                <b-row no-gutters>
+                  <b-col md="6">
+                    <b-card-img
+                      :src="require('../assets/Electric V.jpeg')"
+                      alt="Image"
+                      class="rounded-0"
+                    ></b-card-img>
+                  </b-col>
+                  <b-col md="6">
+                    <b-card-body>
+                      <div class="labels">Electric Vehicle Charging</div>
+                    </b-card-body>
+                  </b-col>
+                </b-row>
+              </router-link>
+            </b-nav-item>
+          </b-card>
+        </div>
+      </b-col>
       <b-col md="4">
         <div class="cards">
           <b-card no-body class="overflow-hidden">
@@ -98,12 +113,7 @@
                   </b-col>
                   <b-col md="6">
                     <b-card-body>
-                      <h2>Home Security</h2>
-                      <b-card-text>
-                        This is a wider card with supporting text as a natural
-                        lead-in to additional content. This content is a little
-                        bit
-                      </b-card-text>
+                      <div class="labels">Home Security and CCTV</div>
                     </b-card-body>
                   </b-col>
                 </b-row>
@@ -116,36 +126,7 @@
         <div class="cards">
           <b-card no-body class="overflow-hidden">
             <b-nav-item class="navCards"
-              ><router-link class="nav-aCards" to="/cctv">
-                <b-row no-gutters>
-                  <b-col md="6">
-                    <b-card-img
-                      :src="require('../assets/CCTV1.jpeg')"
-                      alt="Image"
-                      class="rounded-0"
-                    ></b-card-img>
-                  </b-col>
-                  <b-col md="6">
-                    <b-card-body>
-                      <h2>CCTV</h2>
-                      <b-card-text>
-                        This is a wider card with supporting text as a natural
-                        lead-in to additional content. This content is a little
-                        bit.
-                      </b-card-text>
-                    </b-card-body>
-                  </b-col>
-                </b-row>
-              </router-link>
-            </b-nav-item>
-          </b-card>
-        </div>
-      </b-col>
-      <b-col md="4">
-        <div class="cards">
-          <b-card no-body class="overflow-hidden">
-            <b-nav-item class="navCards"
-              ><router-link class="nav-aCards" to="/cctv">
+              ><router-link class="nav-aCards" to="/commercial">
                 <b-row no-gutters>
                   <b-col md="6">
                     <b-card-img
@@ -156,11 +137,7 @@
                   </b-col>
                   <b-col md="6">
                     <b-card-body>
-                      <h2>Electrical Installations</h2>
-                      <b-card-text>
-                        This is a wider card with supporting text as a natural
-                        lead-in to additional content.
-                      </b-card-text>
+                      <div class="labels">Electrical Installations</div>
                     </b-card-body>
                   </b-col>
                 </b-row>
@@ -190,22 +167,22 @@
           </p>
           <h3>Attention To Detail</h3>
           <p class="description">
-            This Keeping a close and thoughtful eye on all aspects of an
-            electrical and data installation has ensured that these demands are
-            met every time. We can offer complete electrical and data
+            We keep a close and thoughtful eye on all aspects of an home
+            security and electrical installation has ensured that these demands
+            are met every time. We can offer complete electrical and data
             installations
           </p>
         </b-col>
-        <b-col md="3">
+        <b-col md="4">
           <h2>
-            <b-icon icon="stars" class="icon" font-scale="2"></b-icon>
+            <b-icon icon="stars" class="icon" font-scale="1.75"></b-icon>
             Satisfaction Guaranteed
           </h2>
           <h2>
             <b-icon
               icon="hand-thumbs-up-fill"
               class="icon"
-              font-scale="2"
+              font-scale="1.75"
             ></b-icon>
             15 years of Experience
           </h2>
@@ -219,25 +196,12 @@
       <b-row>
         <b-col></b-col>
 
-        <b-col md="2">
-          <div>
-            <b-card img-alt="Image" img-top class="mb-2">
-              <b-nav-item class="nav"
-                ><router-link class="nav-a" to="/data"
-                  >Data
-                  <b-card-img
-                    class="serviceImages"
-                    :src="require('../assets/Internet.jpeg')" /></router-link
-              ></b-nav-item>
-            </b-card></div
-        ></b-col>
-
-        <b-col md="2">
+        <b-col md="3">
           <div>
             <b-card img-alt="Image" img-top tag="article" class="mb-2">
               <b-nav-item class="nav"
                 ><router-link class="nav-a" to="/cctv"
-                  >Home Security and CCTV
+                  >Home Security/CCTV
                   <b-card-img
                     class="serviceImages"
                     :src="require('../assets/Camera.jpeg')"
@@ -247,7 +211,7 @@
             </b-card></div
         ></b-col>
 
-        <b-col md="2">
+        <b-col md="3">
           <div>
             <b-card img-alt="Image" img-top tag="article" class="mb-2">
               <b-nav-item class="nav"
@@ -267,7 +231,7 @@
       <b-row>
         <b-col></b-col>
 
-        <b-col md="2">
+        <b-col md="3">
           <div></div>
 
           <div>
@@ -282,7 +246,7 @@
             ></b-card></div
         ></b-col>
 
-        <b-col md="2">
+        <b-col md="3">
           <div>
             <b-card img-alt="Image" img-top tag="article" class="mb-2">
               <b-nav-item class="nav"
@@ -296,7 +260,7 @@
             ></b-card></div
         ></b-col>
 
-        <b-col md="2">
+        <b-col md="3">
           <div>
             <b-card img-alt="Image" img-top tag="article" class="mb-2">
               <b-nav-item class="nav"
@@ -500,7 +464,7 @@ export default {
 }
 .nav-aCards {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 10px;
   color: #dad3d3;
   text-decoration: none;
 }
@@ -515,20 +479,32 @@ export default {
 }
 
 .overflow-hidden {
-  color: rgb(255, 255, 255);
-  background: rgb(49, 49, 49);
-  margin-bottom: 50px;
-  margin-top: 50px;
+  fill: rgb(235, 100, 33);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%239C92AC' fill-opacity='0.25' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"),
+    linear-gradient(to right top, #000000, #000000, #000000, #010101, #000000);
+
+  background-position: center;
+  animation: moveBg 30s linear infinite;
 }
+
+@keyframes moveBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -100px -200px;
+  }
+}
+
 .overflow-hidden:hover {
-  background: rgb(235, 100, 33);
+  border: white;
   transition: 1s;
 }
 
 .mb-2 {
   color: black;
   background: rgb(14, 13, 13);
-  text-align: center;
+  text-align: left;
 }
 .mb-2:hover {
   transition: 0.5s;
@@ -540,7 +516,7 @@ export default {
 
 .nav-a {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   color: #ffffff;
   text-decoration: none;
 }
@@ -579,7 +555,7 @@ export default {
 
 h4 {
   color: white;
-  font-size: 50px;
+  font-size: 45px;
   font-family: "Quattrocento Sans", sans-serif;
   margin-bottom: 50px;
   background-image: linear-gradient(
@@ -590,10 +566,22 @@ h4 {
   );
 }
 h3 {
-  font-size: 60px;
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
+.labels:hover {
+  color: rgb(235, 100, 33);
+  transition: 0.75s;
+}
+.labels {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 15px 0 7px;
+  font-size: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
 .label {
   color: rgb(235, 100, 33);
   text-align: center;
@@ -638,6 +626,14 @@ h3 {
   border: none;
   font-size: 20px;
 }
+@media (max-width: 1500px) {
+  h3 {
+    font-size: 35px;
+  }
+  .icon {
+    font-size: small;
+  }
+}
 @media (max-width: 900px) {
   h4 {
     font-size: 2rem;
@@ -656,10 +652,7 @@ h3 {
   .services {
     margin-top: 50px;
   }
-  .cards {
-    margin-bottom: 1px;
-    margin-top: 1px;
-  }
+
   .description {
     font-size: 1.2rem;
   }

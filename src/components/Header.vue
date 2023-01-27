@@ -4,7 +4,7 @@
       <div>
         <b-row>
           <b-navbar toggleable="lg" variant="light" fixed="top">
-            <b-col class="col-md-3"
+            <b-col class="col-md-2"
               ><b-navbar-brand tag="h2" class="mb-2">
                 <img
                   :src="require('../assets/southBankElectrical.png')"
@@ -21,31 +21,28 @@
             <b-collapse id="nav-collapse" is-nav>
               <b-col cols="3">
                 <b-navbar-nav>
-                  <b-col md="1"></b-col>
-                  <b-col md="10"
+                  <b-col md="6"></b-col>
+                  <b-col md="12"
                     ><b-nav-item class="nav"
                       ><router-link class="nav-a" to="/"
                         >Home</router-link
                       ></b-nav-item
                     >
                   </b-col>
-                  <b-col md="5">
-                    <b-nav-item-dropdown
-                      text="Services"
-                      right
-                      style="color: black"
-                    >
+                  <b-col md="6">
+                    <b-nav-item-dropdown text="Services" right>
                       <b-dropdown-item>
                         <router-link class="dropDownNav" to="/Cctv"
                           >CCTV</router-link
                         >
                       </b-dropdown-item>
+                      <b-dropdown-item>
+                        <router-link class="dropDownNav" to="/ElectricVehicle"
+                          >Electric Vehicle</router-link
+                        >
+                      </b-dropdown-item>
 
                       <b-dropdown-item>
-                        <router-link class="dropDownNav" to="/Data"
-                          >Data</router-link
-                        ></b-dropdown-item
-                      ><b-dropdown-item>
                         <router-link class="dropDownNav" to="/Aircon"
                           >Aircon</router-link
                         ></b-dropdown-item
@@ -55,17 +52,12 @@
                         ></b-dropdown-item
                       ><b-dropdown-item>
                         <router-link class="dropDownNav" to="/Commercial"
-                          >Commercial/Residential</router-link
+                          >General Electrical/ Data</router-link
                         ></b-dropdown-item
                       >
-                      <b-dropdown-item>
-                        <router-link class="dropDownNav" to="/ElectricVehicle"
-                          >Electric Vehicle</router-link
-                        >
-                      </b-dropdown-item></b-nav-item-dropdown
-                    >
+                    </b-nav-item-dropdown>
                   </b-col>
-                  <b-col md=""
+                  <b-col md="10"
                     ><b-nav-item class="nav">
                       <router-link class="nav-a" to="/projects"
                         >Projects</router-link
@@ -115,12 +107,18 @@ export default {
 .nav-a:hover {
   color: rgb(235, 100, 33);
 }
+
 .services {
   color: black;
 }
+.dropdown-toggle:hover {
+  color: rgb(235, 100, 33) !important;
+}
+.dropdown-toggle {
+  color: black !important;
+}
 .dropdown {
-  font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   color: #000000;
   text-align: center;
   font-family: "Quattrocento Sans", sans-serif;
@@ -137,7 +135,6 @@ export default {
   color: rgb(235, 100, 33);
 }
 .dropDownNav {
-  font-weight: bold;
   font-size: 20px;
   color: black;
 
@@ -152,12 +149,11 @@ export default {
 }
 
 .nav-a {
-  font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   color: #000000;
   text-align: center;
   padding-top: 25px;
-
+  font-weight: bold;
   padding-bottom: 25px;
   padding-left: 70px;
   font-family: "Quattrocento Sans", sans-serif;
@@ -171,12 +167,12 @@ export default {
 }
 .nav-a1 {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 24px;
   color: #ffffff;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 12px;
   padding-right: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   padding-left: 10px;
   font-family: "Quattrocento Sans", sans-serif;
   border-radius: 10px;
@@ -197,7 +193,7 @@ export default {
     font-size: 15px;
   }
   .number {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 </style>

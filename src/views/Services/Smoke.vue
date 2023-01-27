@@ -13,9 +13,9 @@
       <b-col md="1"> </b-col>
       <b-col md="5">
         <b-img
-          style="margin-bottom: 100px"
+          style="margin-bottom: 20px"
           fluid
-          :src="require('../Services/Images/Camera.jpeg')"
+          :src="require('../Services/Images/Smoke.jpeg')"
         ></b-img>
       </b-col>
       <b-row></b-row>
@@ -23,23 +23,19 @@
       <b-col md="3"> </b-col>
       <b-col md="2"> </b-col>
       <b-col md="5">
-        <h2>We Provide Professional CCTV and Home Security Installations</h2>
+        <h2 class="text-center">Smoke Detection</h2>
         <p class="description">
-          South Bank Electrical has been established for over 15 years, we are a
-          team of highly expierienced electrictions.We pride ourselves on
-          getting the job done in a time and cost effective manner.
+          Smoke detectors are an essential part of any home or business. They
+          provide early warning of fire, allowing you and your family or
+          colleagues to evacuate the premises safely. Our smoke detectors are
+          reliable, easy to install, and offer peace of mind for you and your
+          loved ones. They are also affordable and can save you money on
+          insurance premiums.
         </p>
-        <h2>
-          <b-icon icon="tools" class="icon" font-scale="2.5"></b-icon> Expert
-          Electricians
-        </h2>
-
-        <b-row>
-          <h2>
-            <b-icon icon="clock-fill" class="icon" font-scale="2.5"></b-icon>
-            Fast Quotes
-          </h2>
-        </b-row>
+        <p>
+          Don't wait until it's too late - Protect your home or business today
+          and enquire for a free quote!
+        </p>
       </b-col>
       <b-row></b-row>
       <hr />

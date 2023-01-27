@@ -4,37 +4,68 @@
       <b-jumbotron class="jumbotron, text-center" header=" Projects">
       </b-jumbotron>
     </div>
-    <b-row> </b-row>
-    <b-row style="color: white">
-      <b-col md="2"></b-col>
 
-      <b-col md="1"> </b-col>
-      <b-col md="5">
-        <b-img style="margin-bottom: 100px" fluid></b-img>
+    <b-row style="color: white">
+      <b-col md="4"></b-col>
+      <b-col md="4">
+        <div style="margin-bottom: 50px" fluid class="text-center">
+          Here are a few projects that we have worked on:
+        </div>
       </b-col>
+
       <b-row></b-row>
 
-      <b-col md="3"> </b-col>
-      <b-col md="2"> </b-col>
-      <b-col md="5">
-        <h2>Here are some of the projects we have worked on</h2>
-        <p class="description">
-          South Bank Electrical has been established for over 15 years, we are a
-          team of highly expierienced electrictions.We pride ourselves on
-          getting the job done in a time and cost effective manner.
-        </p>
-        <h2>
-          <b-icon icon="tools" class="icon" font-scale="2.5"></b-icon> Expert
-          Electricians
-        </h2>
-
-        <b-row>
-          <h2>
-            <b-icon icon="clock-fill" class="icon" font-scale="2.5"></b-icon>
-            Fast Quotes
-          </h2>
-        </b-row>
+      <b-col md="4">
+        <b-carousel
+          id="carousel-no-animation"
+          :interval="5000"
+          no-hover-pause
+          fade
+          indicators
+          style="margin-bottom: 50px"
+        >
+          <b-carousel-slide
+            v-for="(slide, index) in slides3"
+            :img-src="slide.image"
+            :key="index"
+          >
+          </b-carousel-slide>
+        </b-carousel>
       </b-col>
+      <b-col md="4">
+        <b-carousel
+          id="carousel-no-animation"
+          :interval="5000"
+          no-hover-pause
+          fade
+          indicators
+          style="margin-bottom: 50px"
+        >
+          <b-carousel-slide
+            v-for="(slide, index) in slides2"
+            :img-src="slide.image"
+            :key="index"
+          >
+          </b-carousel-slide> </b-carousel
+      ></b-col>
+      <b-col md="4">
+        <b-carousel
+          id="carousel-no-animation"
+          :interval="5000"
+          no-hover-pause
+          fade
+          indicators
+          style="margin-bottom: 50px"
+        >
+          <b-carousel-slide
+            v-for="(slide, index) in slides"
+            :img-src="slide.image"
+            :key="index"
+          >
+          </b-carousel-slide>
+        </b-carousel>
+      </b-col>
+
       <b-row></b-row>
       <hr />
     </b-row>
@@ -43,11 +74,50 @@
 
 <script>
 export default {
-  components: {},
+  data() {
+    return {
+      slides: [
+        {
+          image: require("../assets/Projects1.jpg"),
+        },
+        {
+          image: require("../assets/Projects2.jpg"),
+        },
+        {
+          image: require("../assets/Projects3.jpg"),
+        },
+      ],
+      slides2: [
+        {
+          image: require("../assets/Projects2.jpg"),
+        },
+        {
+          image: require("../assets/Projects3.jpg"),
+        },
+        {
+          image: require("../assets/Projects1.jpg"),
+        },
+      ],
+      slides3: [
+        {
+          image: require("../assets/Projects3.jpg"),
+        },
+        {
+          image: require("../assets/Projects1.jpg"),
+        },
+        {
+          image: require("../assets/Projects2.jpg"),
+        },
+      ],
+    };
+  },
 };
 </script>
 
 <style scoped>
+.images {
+  margin-top: 20px;
+}
 .jumbotron::after {
   content: "";
   position: absolute;

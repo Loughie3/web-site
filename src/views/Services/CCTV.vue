@@ -16,7 +16,7 @@
       <b-col md="1"> </b-col>
       <b-col md="5">
         <b-img
-          style="margin-bottom: 100px"
+          style="margin-bottom: 20px"
           fluid
           :src="require('../Services/Images/CCTV1.jpeg')"
         ></b-img>
@@ -26,23 +26,22 @@
       <b-col md="3"> </b-col>
       <b-col md="2"> </b-col>
       <b-col md="5">
-        <h2>We Provide Professional CCTV and Home Security Installations</h2>
+        <h2 class="text-center">CCTV and Home Security Installations</h2>
         <p class="description">
-          South Bank Electrical has been established for over 15 years, we are a
-          team of highly expierienced electrictions.We pride ourselves on
-          getting the job done in a time and cost effective manner.
+          Home security and CCTV systems offer peace of mind by providing
+          protection for your home and family. These systems can deter
+          burglaries and break-ins, as well as provide a visual record of any
+          incidents that occur on your property. CCTV systems can be monitored
+          remotely, allowing you to keep an eye on your home even when you're
+          away. 
+          <p>With a wide range of options available, we can find you a system
+          that fits your specific needs and budget.</p> 
+          <p>The professionals at SBE
+          have the expertise and experience to properly install and configure
+          the system to meet your specific needs and the layout of your home. So
+          enquire for a free quote today!
         </p>
-        <h2>
-          <b-icon icon="tools" class="icon" font-scale="2.5"></b-icon> Expert
-          Electricians
-        </h2>
-
-        <b-row>
-          <h2>
-            <b-icon icon="clock-fill" class="icon" font-scale="2.5"></b-icon>
-            Fast Quotes
-          </h2>
-        </b-row>
+        </p>
       </b-col>
       <b-row></b-row>
       <hr />
